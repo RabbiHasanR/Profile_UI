@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.rabbihasan.profile_ui.Edit">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/azur">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/cardview_light_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp"/>
+            <EditText
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/startblue"
+                android:background="@drawable/editstyle"
+                android:id="@+id/input_username"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"/>
+            <EditText
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/startblue"
+                android:background="@drawable/editstyle"
+                android:id="@+id/input_user_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"/>
+            <EditText
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/startblue"
+                android:background="@drawable/editstyle"
+                android:id="@+id/input_user_phone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"/>
+            <EditText
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/startblue"
+                android:background="@drawable/editstyle"
+                android:id="@+id/input_user_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="10sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/editstyle"
+                android:layout_marginTop="28dp"/>
+
+            <Spinner
+                android:id="@+id/input_user_age"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible"
+                android:prompt="@color/graylight"/>
+
+            <Spinner
+                android:id="@+id/input_user_gender"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:background="@android:color/darker_gray"
+                android:prompt="@color/graylight"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/input_user_relationship"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:background="@android:color/darker_gray"
+                android:prompt="@color/graylight"
+                android:visibility="visible"/>
+            <include layout="@layout/camera"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/capture_image"/>
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gradientbutton"
+                android:layout_marginTop="30dp"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/gradientbackground">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up with social networks"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:id="@+id/fb_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fb"/>
+                    <ImageView
+                        android:id="@+id/google_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google"/>
+                    <ImageView
+                        android:id="@+id/linkdin_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/linkdin"/>
+                    <ImageView
+                        android:id="@+id/twitter_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/twitter"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+</ScrollView>

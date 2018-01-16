@@ -1,0 +1,18 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">Profile_UI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="gender_array">
+        <item >Gender</item>
+        <item >Male</item>
+        <item >Female</item>
+        <item >Others</item>
+    </string-array>
+    <string-array name="relation_array">
+        <item >Relationship</item>
+        <item >Singel</item>
+        <item >In a relationship</item>
+        <item >Maried</item>
+    </string-array>
+</resources>
